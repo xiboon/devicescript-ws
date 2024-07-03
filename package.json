@@ -1,0 +1,21 @@
+{
+    "name": "devicescript-ws",
+    "version": "0.1.0",
+    "private": "false",
+    "dependencies": {},
+    "devDependencies": {
+        "@biomejs/biome": "^1.8.3",
+        "@devicescript/cli": "latest"
+    },
+    "scripts": {
+        "setup": "devicescript build --quiet",
+        "build:devicescript": "devicescript build src/main.ts",
+        "postinstall": "npm run setup",
+        "build": "npm run build:devicescript",
+        "watch:devicescript": "devicescript devtools src/main.ts",
+        "watch": "npm run watch:devicescript",
+        "test:devicescript": "devicescript run src/main.ts --test --test-self-exit",
+        "test": "npm run test:devicescript",
+        "start": "npm run watch"
+    }
+}

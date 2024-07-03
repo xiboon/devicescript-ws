@@ -1,0 +1,46 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.7.1/schema.json",
+    "organizeImports": {
+        "enabled": true
+    },
+    "files": {
+        "include": [
+            "src/**/*.ts",
+            "src/**/*.tsx"
+        ]
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true,
+            "correctness": {
+                "recommended": true,
+                "noUnusedImports": "error",
+                "noSwitchDeclarations": "off"
+            },
+            "a11y": {
+                "useButtonType": "off"
+            },
+            "performance": {
+                "recommended": true
+            },
+            "complexity": {
+                "recommended": true,
+                "noForEach": "off"
+            },
+            "style": {
+                "recommended": true,
+                "noParameterAssign": "off",
+                "noNonNullAssertion": "off"
+            },
+            "suspicious": {
+                "recommended": true,
+                "noExplicitAny": "off",
+                "noShadowRestrictedNames": "off"
+            },
+            "nursery": {
+                "noDuplicateJsonKeys": "error"
+            }
+        }
+    }
+}
